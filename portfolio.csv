@@ -1,0 +1,6 @@
+ticker,quantity,asset_type,purchase_price
+AAPL,50,equity,180.0
+MSFT,30,equity,350.0
+NVDA,40,equity,110.0
+SPY,25,etf,480.0
+GLD,20,commodity,190.0

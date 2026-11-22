@@ -1,0 +1,26 @@
+[
+  {
+    "step": "1",
+    "agent": "Data Agent",
+    "task": "Ingestion data penutupan LQ45 point-in-time",
+    "success_criteria": "Missing values 0%"
+  },
+  {
+    "step": "2",
+    "agent": "Quant Agent",
+    "task": "Kalkulasi faktor momentum 12-1m dan quantile returns",
+    "success_criteria": "Deterministik Sharpe & p-value"
+  },
+  {
+    "step": "3",
+    "agent": "Critic Agent",
+    "task": "Audit look-ahead bias pada tanggal rebalancing",
+    "success_criteria": "Verifikasi audit lolos"
+  },
+  {
+    "step": "4",
+    "agent": "Report Agent",
+    "task": "Penyusunan laporan komparatif & ringkasan risiko",
+    "success_criteria": "Laporan terstruktur selesai"
+  }
+]

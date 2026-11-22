@@ -1,0 +1,11 @@
+{
+  "id": "run_20261120_001",
+  "timestamp": "2026-11-20 14:32:10",
+  "verdict": "LULUS DENGAN CATATAN",
+  "question": "Bandingkan momentum 12-1 bulan vs buy-and-hold di saham LQ45 5 tahun terakhir",
+  "mode": "quant",
+  "audience": "analis",
+  "chart_files": [
+    "momentum_cumulative_return.png"
+  ]
+}

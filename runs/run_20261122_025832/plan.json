@@ -1,0 +1,32 @@
+[
+  {
+    "step": "1",
+    "agent": "Data Agent",
+    "task": "Ingestion data universe LQ45 & penyesuaian corporate action untuk: Bandingkan momentum 12-1m vs IHSG...",
+    "success_criteria": "Missing values 0.00%, point-in-time bebas survivorship bias."
+  },
+  {
+    "step": "2",
+    "agent": "Quant Agent",
+    "task": "Kalkulasi matriks kovarian, sinyal cross-sectional faktor, dan uji t-statistik.",
+    "success_criteria": "Hasil deterministik dihitung via sandbox Python."
+  },
+  {
+    "step": "3",
+    "agent": "Backtest Agent",
+    "task": "Simulasi walk-forward out-of-sample dengan estimasi biaya transaksi & slippage.",
+    "success_criteria": "Sharpe, Sortino, Max Drawdown, dan Turnover tercatat."
+  },
+  {
+    "step": "4",
+    "agent": "Critic Agent",
+    "task": "Audit data leakage, look-ahead bias, p-hacking, dan multiple testing correction.",
+    "success_criteria": "Verifikasi ketat sebelum kesimpulan disajikan."
+  },
+  {
+    "step": "5",
+    "agent": "Report Agent",
+    "task": "Sintesis laporan eksekutif disesuaikan untuk audiens: ANALIS.",
+    "success_criteria": "Laporan terstruktur dengan asumsi & keterbatasan."
+  }
+]

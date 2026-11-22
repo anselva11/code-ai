@@ -1,0 +1,71 @@
+/* AXIOM TUI Stylesheet */
+Screen {
+    background: $background;
+    color: $text;
+}
+
+#main-layout {
+    height: 1fr;
+    layout: horizontal;
+}
+
+#sidebar-container {
+    width: 26;
+    min-width: 20;
+    max-width: 32;
+    height: 100%;
+    border-right: solid $surface-lighten-2;
+    background: $surface-darken-1;
+    layout: vertical;
+}
+
+#content-container {
+    width: 1fr;
+    height: 100%;
+    layout: vertical;
+}
+
+#convo-log-area {
+    height: auto;
+    max-height: 4;
+    background: $surface-darken-2;
+    padding: 0 1;
+    border-bottom: solid $surface-lighten-1;
+}
+
+#convo-log-label {
+    text-style: bold;
+    color: $accent;
+}
+
+#bottom-controls {
+    dock: bottom;
+    height: auto;
+    background: $surface;
+}
+
+/* Pipeline styling */
+PipelineBar {
+    dock: top;
+    height: 1;
+    background: $surface-darken-2;
+}
+
+/* Keybindings status bar */
+#keybindings-bar {
+    height: 1;
+    background: $surface-darken-3;
+    color: $text-muted;
+    padding: 0 1;
+    text-align: center;
+}
+
+/* Scrollbars */
+ScrollableContainer {
+    scrollbar-size-vertical: 1;
+    scrollbar-size-horizontal: 1;
+}
+
+OptionList {
+    scrollbar-size-vertical: 1;
+}

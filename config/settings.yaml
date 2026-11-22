@@ -1,0 +1,42 @@
+system:
+  name: "AXIOM AI AGENTS"
+  tagline: "Autonomous Financial Intelligence & Quantitative Research System"
+  version: "0.1.0"
+  timezone: "UTC"
+  reports_dir: "reports"
+  cache_dir: "data/cache"
+  default_cache_ttl_hours: 24
+
+providers:
+  equity:
+    primary: "yahoo"
+    fallback: "stooq"
+  crypto:
+    primary: "yahoo_crypto"
+    fallback: "binance_public"
+  macro:
+    primary: "yahoo_macro"
+    fallback: "fred"
+  news:
+    primary: "rss_news"
+
+backtesting:
+  default_rf_rate: 0.045
+  default_buy_fee: 0.0010
+  default_sell_fee: 0.0015
+  default_slippage: 0.0005
+  rebalance_freq: "monthly"
+  execution_timing: "open_t_plus_1" # Strict look-ahead bias avoidance
+
+visualization:
+  theme: "dark"
+  bg_color: "#0e1117"
+  text_color: "#e0e6ed"
+  grid_color: "#242b35"
+  accent_primary: "#00b4d8"
+  accent_secondary: "#06d6a0"
+  accent_warning: "#ffd166"
+  accent_danger: "#ef476f"
+  dpi: 150
+  width: 1600
+  height: 900
